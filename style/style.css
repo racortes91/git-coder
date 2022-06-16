@@ -32,14 +32,10 @@ input {
 /* Inicio Sección Menú Principal*/
 
 .menu {
-    display: flex;
-    background: linear-gradient(to bottom, rgb(0, 145, 0), rgb(0, 210, 0));
-    padding: 20px;
-    box-shadow: 3px 2px 7px;
-    align-items: center;
+    display: flex; 
     justify-content: space-around;
-    width: auto;
-    animation: fadein 2s; 
+    background-color: #212529;
+    padding: 10px;
 
 }
 
@@ -668,7 +664,7 @@ input {
 /* inicio Secciones*/
 
 .secciones__figuras {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 100px;
@@ -867,5 +863,4 @@ input {
    
 }
 /* Fin Sección Figuras*/
-
 

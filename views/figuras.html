@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../Style/style.css" />
-    <title>Tienda de Video Juegos</title>
+    <title>Sitio Juegos</title>
 </head>
 <body>
-    <!--Inicio Menú PRincipal-->
-    <header class="menu">
-        <img src="../img/logo.png" alt="" class="menu__logo"></im>
-        <nav class="menu__cabecera">
-            <ul class="menu__elementos">
-                <li>
-                    <a class="menu__enlaces" href="../index.html">Home</a>
-                </li>
-                <li>
-                     <a class="menu__enlaces" href="./views/nosotros.html">Nosotros</a>
-                 </li>
-                 <li>
-                     <a class="menu__enlaces" href="./views/juegos.html">Juegos</a>
-                 </li>
-                 <li>
-                     <a class="menu__enlaces" href="./views/figuras.html">Figuras</a>
-                 </li>
-                 <li>
-                     <a class="menu__enlaces" href="./views/contacto.html">Contacto</a>
-                 </li>
-            </ul>
-        </nav>
-    </header>
-    <!--Fin Menú Principal--> 
+     <!--Inicio Menú Principal-->
+     <header class="menu" >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-around">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="#"><img src="../img/logo.png" width="200px" alt=""></a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                 <div class="navbar-nav">
+                 <a class="nav-link" href="index.html">Home</a>
+                 <a class="nav-link" href="views/nosotros.html">Nosotros</a>
+                 <a class="nav-link" href="views/juegos.html">Juegos</a>
+                 <a class="nav-link" href="views/figuras.html">Figuras</a>
+                 <a class="nav-link" href="views/contacto.html">Contacto</a>
+             </div>
+             <form class="d-flex" role="search">
+                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-outline-success" type="submit">Search</button>
+             </form>
+           </div>
+         </div>
+       </nav>
+     </header>
+     <!--Fin Menú Principal-->
 
     <!--Inicio Secciónes-->
         <section class="secciones__figuras">
@@ -77,6 +82,8 @@
     </section>   
     <!--Fin Sección Figuras-->
 
+    
+
     <!--Inicio Sección Novedades-->
     </section class="novedades"> 
         <h2 class="novedades__titulo">Novedades</h2>
@@ -103,11 +110,26 @@
     <!--Fin Sección Novedades-->
     
     <!--Inicio Galería-->
-    <section class="mosaico">
-        <img class="mosaico__elden" src="../img/elden.jpg" alt="">
-        <img class="mosaico__nat" src="../img/nate.jpg" alt="">
-        <img class="mosaico__halo" src="../img/halo.jpg" alt="">
-        <img class="mosaico__re" src="../img/re.jpg" alt="">
+    <section class="container .col-lg-">
+        <div class="row">
+          <picture class="col">
+            <img src="../img/elden.jpg" width="200px" alt="">
+          </picture>
+          <picture class="col">
+            <img src="../img/nate.jpg" width="200px" alt="">
+          </picture>
+        </div>
+        <div class="row">
+          <picture class="col">
+            <img src="../img/halo.jpg" width="200px" alt="">
+          </picture>
+          <picture class="col">
+            <img src="../img/mgs.jpg"  width="200px" alt="">
+          </picture>
+          <picture class="col">
+            <img src="../img/rtw.jpg"  width="200px" alt="">
+          </picture>
+        </div>
     </section>
     <!--Fin Galería-->
 

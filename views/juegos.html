@@ -4,88 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css" />
-    <title>Tienda de Video Juegos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Style/style.css" />
+    <title>Sitio Juegos</title>
 </head>
 <body>
    <!--Inicio Menú PRincipal-->
-   <header class="menu-principal">
-        <img src="../img/logo.png" alt="" class="menu-logo"></im>
-        <nav class="menu-cabecera">
-            <ul class="menu-elementos">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="../views/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                     <a href="../views/juegos.html">Juegos</a>
-                </li>
-                <li>
-                    <a href="../views/figuras.html">Figuras</a>
-                </li>
-                <li>
-                    <a href="../views/contacto.html">Contacto</a>
-                 </li>
-            </ul>
-     </nav>
-   </header> 
+    <header class="menu" >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-around">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/logo.png" width="200px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="../views/nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="../views/juegos.html">Juegos</a>
+                    <a class="nav-link" href="../views/figuras.html">Figuras</a>
+                    <a class="nav-link" href="../views/contacto.html">Contacto</a>
+                </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!--Fin Menú Principal-->    
 
-    <!--Inicio Sección banner-->
-    <div class="banner-juegos">
-        <h1 class="juegos-titulo">La Diversión que quieres vivir</h1>
-    </div>
-     <!--Fin Sección banner-->
+    <!--Inicio Sección Carrusel-->
+    <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/MARIO-STRIKERS-BATTLE-LEAGUE-disponible-_c_1366x400.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/FIFA22B1_banner_home_c_1366x400.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/POKEMON-SCARLET-VIOLET-banner-principal_c_1366x400.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+    <!--Fin Sección Carrusel-->
 
     <!--Inicio Sección Juegos-->
-    <div> 
-        </div>
-            <h2>Juegos</h2>
-         <div> 
-            <img src="../img/fifa22.jpg" alt="" height="300px">
-            <h3>Fifa 22 Ps5</h3>
-            <p> $45.000</p>
-            <input type="button" value="anadir">
-         </div>
-        <div> 
-            <img src="../img/elden-ring.jpg" alt="" height="300px">
-            <h3>Elden Ring Ps5</h3>
-            <p> $65.000</p>
-            <input type="button" value="anadir">
-        </div>
-        <div> 
-            <img src="../img/pokemon-aeceus.jpg" alt="" height="300px">
-            <h3>Pokemon Arceus</h3>
-            <p> $55.000</p>
-            <input type="button" value="anadir">
-         </div> 
-    </div>
+    <section class="juegos">
+        <h2 class="juegos__titulo">Consolas y Accesorios</h2>
+        <section class="juegos__contenedor">
+            <article class="juegos__producto juegos__producto--adventure">
+                <img src="../img/fifa22.jpg" alt="" height="200px" class="pl5-foto">
+                <h3>Figura Adbventure Time</h3>
+                <p class="juegos__precio"> $45.000</p>
+                <input type="button" value="anadir">
+                </div>
+            </article>
+            <article class="juegos__producto figura__producto--ironman">
+                <img src="../img/elden-ring.jpg" alt="" height="200px" class="swift-foto">
+                <h3>Figura Iron Man</h3>
+                <p class="juegos__precio"> $65.000</p>
+                <input type="button" value="anadir">
+            </article>
+            <article class="juegos__producto figura__producto--matrix">
+                <img src="../img/pokemon-aeceus.jpg" alt="" height="200px" class="series-foto">
+                <h3>Nintendo Swift</h3>
+                <p class="juegos__precio"> $55.000</p>
+                <input type="button" value="anadir">
+            </article>
+        </section>
+    </section>   
     <!--Fin Sección Juegos-->
 
     <!--Inicio Sección Novedades-->
-        </div class="productos-novedades"> 
-            <h2 class="titulo-novedades">Novedades</h2>
-            <div class="novedades"> 
-                <img src="../img/kratos.jpg" alt="" height="200px">
-                <h3>Figura God Of War</h3>
+    </section class="novedades"> 
+        <h2 class="novedades__titulo">Novedades</h2>
+        <section class="novedades__contenedor">
+            <article class="novedades__producto">
+                <img src="img/deku.jpg" alt="" height="200px">
+                <h3>Figura Boku No Hero</h3>
                 <p class="precio"> $50.000</p>
                 <input type="button" value="anadir">
-            </div>
-            <div class="novedades"> 
-                <img src="../img/elden-ring.jpg" alt="" height="200px">
+            </article>
+        <article class="novedades__producto"> 
+                <img src="img/elden-ring.jpg" alt="" height="200px">
                 <h3>Elden Ring Ps5</h3>
                 <p class="precio"> $65.000</p>
                 <input type="button" value="anadir">
-            </div>
-            <div class="novedades-1"> 
-                <img src="../img/dualsense.jpg" alt="" height="200px">
+        </article>
+        <article class="novedades__producto"> 
+                <img src="img/dualsense.jpg" alt="" height="200px">
                 <h3>Dualsense Ps5</h3>
                 <p class="precio"> $55.000</p>
                 <input type="button" value="anadir">
-            </div> 
-        </div> 
+            </article> 
+        </section>
+    </section> 
     <!--Fin Sección Novedades-->
    
     <!--Inicio Footer-->

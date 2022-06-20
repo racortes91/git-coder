@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css" />
-    <title>Tienda de Video Juegos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Style/style.css"/>
+    <title>Sitio Juegos</title>
 </head>
 <body>
     <!--Inicio Menú PRincipal-->
-    <header class="menu-principal">
-        <img src="../img/logo.png" alt="" class="menu-logo"></im>
-        <nav class="menu-cabecera">
-            <ul class="menu-elementos">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                     <a href="../views/nosotros.html">Nosotros</a>
-                 </li>
-                 <li>
-                     <a href="../views/juegos.html">Juegos</a>
-                 </li>
-                 <li>
-                     <a href="../views/figuras.html">Figuras</a>
-                 </li>
-                 <li>
-                     <a href="../views/contacto.html">Contacto</a>
-                 </li>
-            </ul>
-        </nav>
-     </header> 
+    <header class="menu" >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-around">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="#"><img src="../img/logo.png" width="200px" alt=""></a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                 <div class="navbar-nav">
+                 <a class="nav-link" href="../index.html">Home</a>
+                 <a class="nav-link" href="../views/nosotros.html">Nosotros</a>
+                 <a class="nav-link" href="../views/juegos.html">Juegos</a>
+                 <a class="nav-link" href="../views/figuras.html">Figuras</a>
+                 <a class="nav-link" href="../views/contacto.html">Contacto</a>
+             </div>
+             <form class="d-flex" role="search">
+                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-outline-success" type="submit">Search</button>
+             </form>
+           </div>
+         </div>
+       </nav>
+     </header>
     <!--Fin Menú Principal-->    
 
     <!--Inicio Sección banner-->
@@ -49,37 +54,39 @@
     <!--Fin Sección Nosotros-->
 
     <!--Inicio Sección Novedades-->
-    </div class="productos-novedades"> 
-        <h2 class="titulo-novedades">Novedades</h2>
-        <div class="novedades"> 
-            <img src="../img/kratos.jpg" alt="" height="200px">
-            <h3>Figura God Of War</h3>
-            <p class="precio"> $50.000</p>
-            <input type="button" value="anadir">
-        </div>
-        <div class="novedades"> 
-            <img src="../img/elden-ring.jpg" alt="" height="200px">
-            <h3>Elden Ring Ps5</h3>
-            <p class="precio"> $65.000</p>
-            <input type="button" value="anadir">
-        </div>
-        <div class="novedades-1"> 
-            <img src="../img/dualsense.jpg" alt="" height="200px">
-            <h3>Dualsense Ps5</h3>
-            <p class="precio"> $55.000</p>
-            <input type="button" value="anadir">
-        </div> 
-    </div> 
+    </section class="novedades"> 
+        <h2 class="novedades__titulo">Novedades</h2>
+        <section class="novedades__contenedor">
+            <article class="novedades__producto">
+                <img src="../img/deku.jpg" alt="" height="200px">
+                <h3>Figura Boku No Hero</h3>
+                <p class="precio"> $50.000</p>
+                <input type="button" value="anadir">
+            </article>
+            <article class="novedades__producto"> 
+                <img src="../img/elden-ring.jpg" alt="" height="200px">
+                <h3>Elden Ring Ps5</h3>
+                <p class="precio"> $65.000</p>
+                <input type="button" value="anadir">
+            </article>
+            <article class="novedades__producto"> 
+                <img src="../img/dualsense.jpg" alt="" height="200px">
+                <h3>Dualsense Ps5</h3>
+                <p class="precio"> $55.000</p>
+                <input type="button" value="anadir">
+            </article> 
+        </section>
+    </section> 
     <!--Fin Sección Novedades-->
 
     <!--Inicio Footer-->
-    <footer> 
-        <div class="redes-sociales">
-          <img src="../img/fb.png" alt="" height="20px">
-          <img src="../img/ig.png" alt="" height="20px">
-         </div>
-        <p> <a href="pixelgames.com">Pixel Games</a></p>
-        <p class="pie-firma"> Todos los derechos reservados</p>
+    <footer class="footer">
+        <section class="footer__sociales">
+            <img src="../img/fb.png" alt="" height="20px">
+            <img src="../img/ig.png" alt="" height="20px">
+        </section>
+        <p class="footer__texto"> <a href="pixelgames.com">Pixel Games</a></p>
+        <p class="footer__firma"> Todos los derechos reservados</p>
     </footer>
     <!--Fin Footer-->
 </body>

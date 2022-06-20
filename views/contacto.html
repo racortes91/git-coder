@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../Style/style.css" />
-    <title>Tienda de Video Juegos</title>
+    <link rel="stylesheet" type="text/css" href="../Style/style.css"/>
+    <title>PIXEL GAMES</title>
 </head>
 <body>
     <!--Inicio Menú Principal-->
     <header class="menu" >
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-around">
              <div class="container-fluid">
-                 <a class="navbar-brand" href="#"><img src="../img/logo.png" width="200px" alt=""></a>
+                 <a class="navbar-brand menu__logo" href="#"><img src="../img/logo.png" width="150px" alt=""></a>
                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                  </button>
@@ -36,14 +39,15 @@
      <!--Fin Menú Principal--> 
 
     <!--Inicio Sección banner-->
-    <div class="banner-contacto">
-        <h1 class="ontacto-titulo">¡Estamos muy cerca de ti!</h1>
+    <div class="contacto">
+        <h1 class="contacto__titulo">¡Estamos muy cerca de ti!</h1>
+        <p class="contacto_texto"> ¿Necesita recibir información de la snovedades que tenemos para ti? ¡Suscríbete a nuestro News Letter!</p>
     </div>
     <!--Fin Sección banner-->
 
     <!--Inicio Sección Form-->
     <section class="form__seccion justify-content-center">
-        <form>
+        <form class="form__datos">
             <div class="mb-3 ">
               <label for="exampleInputEmail1" class="form-label">Nombre Completo</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -57,10 +61,10 @@
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-          <picture>
+        </form>
+        <picture class="form__gif">
             <img src="../img/sold-sanke.gif" alt="">
-          </picture>
+        </picture>
     </section>
     <!--Inicio Sección Form-->
 
@@ -91,13 +95,16 @@
   
     <!--Inicio Footer-->
     <footer class="footer">
+        <picture class="footer__logo">
+            <img src="../img/logo.png" width="100px" alt="">
+        </picture>
         <section class="footer__sociales">
             <img src="../img/fb.png" alt="" height="20px">
             <img src="../img/ig.png" alt="" height="20px">
         </section>
         <p class="footer__texto"> <a href="pixelgames.com">Pixel Games</a></p>
         <p class="footer__firma"> Todos los derechos reservados</p>
-</footer>
+    </footer>
 <!--Fin Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

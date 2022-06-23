@@ -29,7 +29,7 @@ input {
     
 }
 
-/* Inicio Sección Menú Principal*/
+/* Inicio Sección Menú Principal */
 
 .menu {
     display: flex; 
@@ -104,7 +104,7 @@ input {
         height: 150px;
     }
 } 
-/* Fin Sección Menú Principal*/
+Fin Sección Menú Principal*/
 
 /* inicio Secciones*/
 
@@ -798,7 +798,6 @@ input {
     font-size: 30px;
     justify-content: space-around;
     justify-items: center;
-    efectos_index
 }
 
 .juegos__contenedor {
@@ -1003,7 +1002,7 @@ input {
     font-size: 30px;
     justify-content: space-around;
     justify-items: center;
-    efectos_index
+
 }
 
 .figuras__contenedor {
